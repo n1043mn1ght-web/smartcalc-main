@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://n1043mn1ght-web.github.io/smartcalc-main/
+Sitemap: https://n1043mn1ght-web.github.io/smartcalc-main/sitemap.xml
 
