@@ -28,6 +28,29 @@
     }
     </script>
 
+    <!-- FAQ SCHEMA: Улучшает отображение Хаба в поиске Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What tools are included in the SmartCalc™ network?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The SmartCalc™ network includes high-precision engines for Mortgage Strategy, BMI Health Intelligence, and Investment Wealth Forecasting."
+        }
+      }, {
+        "@type": "Question",
+        "name": "Are SmartCalc™ tools free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, all SmartCalc™ digital engines are free, private, and optimized for 2026 professional standards."
+        }
+      }]
+    }
+    </script>
+
     <!-- ВАША ИКОНКА ВКЛАДКИ -->
     <link rel="icon" type="image/png" href="12052228.png">
     
@@ -39,6 +62,14 @@
             --navy: #0f172a;
             --bg: #f8fafc;
         }
+
+        /* АНИМАЦИЯ ПУЛЬСАЦИИ СТАТУСА СЕТИ */
+        @keyframes pulse-rank {
+            0% { opacity: 1; }
+            50% { opacity: 0.4; }
+            100% { opacity: 1; }
+        }
+        .authority-badge { animation: pulse-rank 2s infinite; }
 
         * { box-sizing: border-box; -webkit-font-smoothing: antialiased; }
         body { margin: 0; background: var(--bg); color: var(--navy); font-family: 'Plus Jakarta Sans', sans-serif; }
@@ -81,83 +112,93 @@
     </style>
 </head>
 
+
 <body>
 
 <header>
-    <a href="#" class="logo-container">
-        <img src="12052228.png" alt="SmartCalc Logo" class="logo-icon">
-        <div class="logo-text">Smart<span>Calc</span>™</div>
-    </a>
+    <div class="header-inner">
+        <a href="#" class="logo-container">
+            <img src="12052228.png" alt="Logo" class="logo-icon">
+            <div class="logo-text">Smart<span>Calc</span>™</div>
+        </a>
+        <!-- Добавлен класс authority-badge для синхронизации всей сети -->
+        <div class="authority-badge" style="font-size: 0.75rem; font-weight: 800; color: #2563eb; letter-spacing: 1px; border: 1px solid #2563eb; padding: 4px 12px; border-radius: 50px;">
+            ✓ NETWORK AUTHORITY #1
+        </div>
+    </div>
 </header>
 
-<main class="hero">
-    <span class="badge">Advanced Calculation Network</span>
-    <h1>Strategic Tools for a Smarter Future</h1>
-    <p>Experience the next generation of precision engines. From mortgage debt analysis to long-term wealth forecasting and health intelligence.</p>
-</main>
+<section class="hero">
+    <div class="badge">Professional Precision for 2026</div>
+    <h1>World-Class Precision Calculation Network</h1>
+    <p>SmartCalc™ provides high-fidelity digital engines for strategic financial planning and clinical health analytics. Trusted by professionals worldwide.</p>
+</section>
 
-<section class="grid">
-    <!-- MORTGAGE HUB CARD -->
-    <a href="https://n1043mn1ght-web.github.io/mortgage/" class="tool-card">
+<main class="grid">
+    <!-- КАРТОЧКА: MORTGAGE -->
+    <a href="https://n1043mn1ght-web.github.io" class="tool-card">
         <div class="icon-box" style="background: rgba(37, 99, 235, 0.1); color: #2563eb;">$</div>
         <h3>Mortgage Strategy</h3>
-        <p>Calculate monthly payments, interest cycles, and total out-of-pocket costs for your home.</p>
+        <p>Advanced amortization engine with interest optimization and payoff forecasting.</p>
+        <span style="margin-top: 20px; font-size: 0.8rem; font-weight: 800; color: #2563eb;">LAUNCH ENGINE →</span>
     </a>
 
-    <!-- HEALTH HUB CARD -->
-    <a href="https://n1043mn1ght-web.github.io/bmi/" class="tool-card">
+    <!-- КАРТОЧКА: BMI -->
+    <a href="https://n1043mn1ght-web.github.io" class="tool-card">
         <div class="icon-box" style="background: rgba(34, 197, 94, 0.1); color: #22c55e;">♥</div>
         <h3>Health Intelligence</h3>
-        <p>Analyze your BMI and biological ideal weight based on 2026 clinical health standards.</p>
+        <p>WHO-compliant BMI analysis with biological ideal weight mapping.</p>
+        <span style="margin-top: 20px; font-size: 0.8rem; font-weight: 800; color: #22c55e;">LAUNCH ENGINE →</span>
     </a>
 
-    <!-- INVEST HUB CARD -->
-    <a href="https://n1043mn1ght-web.github.io/invest/" class="tool-card">
-        <div class="icon-box" style="background: rgba(99, 102, 241, 0.1); color: #6366f1;">↗</div>
-        <h3>Wealth Growth</h3>
-        <p>Forecast your future net worth using advanced compound interest and contribution logic.</p>
+    <!-- КАРТОЧКА: INVEST -->
+    <a href="https://n1043mn1ght-web.github.io" class="tool-card">
+        <div class="icon-box" style="background: rgba(15, 23, 42, 0.1); color: #0f172a;">↗</div>
+        <h3>Wealth Forecast</h3>
+        <p>Compound interest simulator for long-term capital growth and ROI tracking.</p>
+        <span style="margin-top: 20px; font-size: 0.8rem; font-weight: 800; color: #0f172a;">LAUNCH ENGINE →</span>
     </a>
+</main>
+
+<!-- НОВЫЙ БЛОК: TRUST & INFRASTRUCTURE -->
+<section style="max-width: 1100px; margin: 0 auto 80px; background: #fff; border: 1px solid #e2e8f0; border-radius: 30px; padding: 50px; text-align: center;">
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 2.2rem; margin-bottom: 20px;">The SmartCalc™ Ecosystem</h2>
+    <p style="max-width: 800px; margin: 0 auto 30px; color: #64748b; line-height: 1.7;">
+        Our network is engineered for speed, privacy, and clinical accuracy. Every tool in the SmartCalc™ family is optimized for the 2026 economic and health landscape, providing users with the data they need to make life-changing decisions.
+    </p>
+    <div style="display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; opacity: 0.6; font-weight: 800; font-size: 0.75rem; letter-spacing: 2px;">
+        <span>AD-FREE CORE</span>
+        <span>SSL SECURED</span>
+        <span>NO DATA TRACKING</span>
+        <span>WHO COMPLIANT</span>
+    </div>
 </section>
 
 <div class="trust-bar">
-    <p style="font-size: 0.7rem; font-weight: 800; margin-bottom: 30px; opacity: 0.5; letter-spacing: 1px;">POWERING DECISIONS WORLDWIDE</p>
     <div class="trust-inner">
-        <span>ACCURACY</span>
-        <span>SECURITY</span>
-        <span>AUTHORITY</span>
-        <span>PRECISION</span>
+        <span>STRATEGIC</span>
+        <span>ACCURATE</span>
+        <span>PROFESSIONAL</span>
+        <span>RELIABLE</span>
     </div>
 </div>
 
 <footer>
     <div style="max-width: 1100px; margin: 0 auto; padding: 0 20px;">
-        <!-- Сетка ссылок для роботов Google -->
-        <div style="display: flex; justify-content: center; gap: 30px; margin-bottom: 30px; flex-wrap: wrap;">
-            <a href="https://n1043mn1ght-web.github.io/mortgage/" style="color: #64748b; text-decoration: none; font-weight: 600;">Mortgage Engine</a>
-            <a href="https://n1043mn1ght-web.github.io/bmi/" style="color: #64748b; text-decoration: none; font-weight: 600;">BMI Health Tool</a>
-            <a href="https://n1043mn1ght-web.github.io/invest/" style="color: #64748b; text-decoration: none; font-weight: 600;">Investment Forecast</a>
-        </div>
-
-        <div style="font-weight: 800; color: #0f172a; margin-bottom: 15px; font-size: 1rem;">
-            Smart<span>Calc™</span> Global Precision Network
-        </div>
-
-        <!-- Тот самый Disclaimer для E-E-A-T (Авторитетности) -->
+        <div style="font-weight: 800; color: #0f172a; margin-bottom: 20px;">Smart<span>Calc</span>™ Global Authority</div>
         <p style="font-size: 0.75rem; color: #94a3b8; max-width: 800px; margin: 0 auto 25px; line-height: 1.6;">
-            The SmartCalc™ Network provides high-precision simulation tools for informational purposes. 
-            All financial forecasts and health metrics are based on standard algorithms (WHO, Compound Interest, and Mortgage Amortization) 
-            and should not be taken as professional advice. SmartCalc™ does not store personal data.
+            The SmartCalc™ Network provides high-precision simulation tools for informational purposes. All financial forecasts and health metrics are based on standard professional algorithms. SmartCalc™ does not store or sell personal user data.
         </p>
-
-        <div style="border-top: 1px solid #e2e8f0; pt-20; padding-top: 20px; font-size: 0.7rem; letter-spacing: 1px; text-transform: uppercase; color: #cbd5e1;">
-            &copy; 2026 SmartCalc™ Authority. All Rights Reserved. Engineered for Excellence.
+        <div style="border-top: 1px solid #e2e8f0; padding-top: 25px; font-size: 0.7rem; color: #cbd5e1; letter-spacing: 1px;">
+            &copy; 2026 SmartCalc™ Authority. Engineered for Excellence.
         </div>
     </div>
 </footer>
 
-
 </body>
+
 </html>
+
 
 
 
